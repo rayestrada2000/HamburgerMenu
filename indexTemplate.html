@@ -27,7 +27,14 @@
         </ul>
       </div>
     </nav>
-    <script src="/js/script.js"></script>
+    <script>
+      const toggleButton = document.getElementsByClassName('toggle-button')[0]
+      const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+      toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+      })
+    </script>
   </body>
 
 </html>
